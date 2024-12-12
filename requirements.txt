@@ -3,5 +3,4 @@ openai
 PyPDF2
 python-docx
 gunicorn
-os
 python-dotenv
