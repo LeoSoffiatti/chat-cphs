@@ -1,3 +1,0 @@
-- name: USE CHATGPT
-    env:
-      super_secret: ${{ secrets.OPENAI_API_KEY }}

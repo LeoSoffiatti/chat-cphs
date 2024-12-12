@@ -14,7 +14,7 @@ app = Flask(__name__)
 # Configure OpenAI API key
 
 client = OpenAI(
-  api_key=os.environ.get("OPENAI_API_KEY")
+  api_key=os.getenv("OPENAI_API_KEY")
 )
 
 # Directory to save uploaded files
