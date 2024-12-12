@@ -1,0 +1,106 @@
+/* Colors inspired by UC Berkeley */
+:root {
+  --berkeley-blue: #003262;
+  --cal-gold: #FDB515;
+  --light-gray: #f5f5f5;
+  --dark-gray: #333333;
+  --white: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-gray);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.upload-section {
+  background-color: var(--white);
+  padding: 20px;
+  border: 2px solid var(--berkeley-blue);
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+}
+
+.upload-section header {
+  margin-bottom: 20px;
+}
+
+.upload-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--cal-gold);
+  color: var(--berkeley-blue);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #ffcc33;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.upload-label.selected {
+  background-color: var(--berkeley-blue);
+  color: var(--white);
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#upload-evaluate-btn {
+  background-color: var(--berkeley-blue);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.feedback-panel {
+  margin-top: 30px;
+  background-color: var(--berkeley-blue);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.feedback-panel h2 {
+  color: var(--cal-gold);
+  margin-bottom: 20px;
+}
+
+.feedback-panel h3 {
+  margin-top: 20px;
+}
+
+.feedback-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.feedback-panel ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: var(--white);
+  color: var(--dark-gray);
+  border-radius: 5px;
+}

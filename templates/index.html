@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UC Berkeley CPHS Document Evaluator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="upload-section">
+      <header>
+        <h1>UC Berkeley CPHS Document Evaluator</h1>
+        <p>Upload a PDF document for evaluation based on CPHS guidelines.</p>
+      </header>
+      <form id="upload-form" method="POST" enctype="multipart/form-data">
+        <label for="file-upload" class="upload-label">Choose File</label>
+        <input type="file" id="file-upload" name="protocol" accept=".pdf">
+        <button type="submit" id="upload-evaluate-btn" class="btn">Upload and Evaluate</button>
+      </form>
+    </div>
+
+    <div class="feedback-panel">
+      <h2>Overall Score: <span id="overall-score">--</span></h2>
+
+      <div class="analysis-section">
+        <h3>Executive Summary</h3>
+        <p id="executive-summary">No summary available yet.</p>
+
+        <h3>Improvement Points</h3>
+        <ul id="improvement-points">
+          <li>No improvement points available yet.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
