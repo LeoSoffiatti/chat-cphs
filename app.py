@@ -9,8 +9,9 @@ import logging
 app = Flask(__name__)
 
 # Configure OpenAI API key
+
 client = OpenAI(
-  api_key="test"  # Replace with your OpenAi
+  api_key="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"  # Replace with your OpenAi
 )
 
 # Directory to save uploaded files
