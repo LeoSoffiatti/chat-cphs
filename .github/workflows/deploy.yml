@@ -30,11 +30,3 @@ jobs:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: |
         echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
-
-    # Step 5: Run the Flask application
-    - name: Run Flask App
-      env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      run: |
-        export FLASK_APP=app.py
-        flask run --host=0.0.0.0 --port=8080
